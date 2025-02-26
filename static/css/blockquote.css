@@ -1,0 +1,16 @@
+/* Blockquote styling with author attribution */
+blockquote {
+  border-left: 3px solid #ccc;
+  margin-left: 0;
+  padding-left: 1em;
+  padding-right: 2em;
+  color: #555;
+}
+
+/* Basic blockquote styling (default for all blockquote paragraphs) */
+blockquote p {
+  text-align: left;
+  font-style: normal;
+}
+
+/* Target paragraphs that start with a dash followed by text (author attribution) is handled with JavaScript */

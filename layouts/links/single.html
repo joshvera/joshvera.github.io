@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article>
+  <div class="title">
+    {{ if not .Params.link }}
+    <h1>{{ .Title }}</h1>
+    {{ end }}
+    <time>{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+  </div>
+  
+  <div class="link-post">
+    {{ if .Params.link }}
+    <p class="link-title"><a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }}</a></p>
+    {{ end }}
+    {{ .Content }}
+    
+    {{ if .Params.via }}
+    <p class="via">via <a href="{{ .Params.via }}">{{ .Params.via }}</a></p>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

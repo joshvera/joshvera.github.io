@@ -1,0 +1,18 @@
+{{ define "main" }}
+<content>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <ul class="blog-posts">
+    {{ range .Pages }}
+    <li>
+      <div class="link-post-item">
+        <span class="post-date">
+          {{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}
+        </span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</content>
+{{ end }}

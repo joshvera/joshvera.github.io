@@ -7,36 +7,44 @@ theme = "smol"
 [params]
     subtitle = "An experiment in logging."
     dateFmt = "01.02.2006 15:04"
+    customCSS = ["css/custom.css", "css/link-post.css", "css/blockquote.css"]
+    mainSections = ["posts", "links"]
 
-# # Header
-# [menu]
-#   [[menu.main]]
-#         identifier = "posts"
-#         name = "Posts"
-#         url = "/posts/"
-#         weight = 1 
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
 
-#   [[menu.main]]
-#         identifier = "categories"
-#         name = "Categories"
-#         url = "/categories/"
-#         weight = 2 
+  [[menu.main]]
+        identifier = "links"
+        name = "Links"
+        url = "/links/"
+        weight = 2 
 
-#   [[menu.main]]
-#         identifier = "tags"
-#         name = "Tags"
-#         url = "/tags/"
-#         weight = 3
+  # Commented out categories and tags to hide them from the navigation
+  # [[menu.main]]
+  #       identifier = "categories"
+  #       name = "Categories"
+  #       url = "/categories/"
+  #       weight = 3 
+
+  # [[menu.main]]
+  #       identifier = "tags"
+  #       name = "Tags"
+  #       url = "/tags/"
+  #       weight = 4
 
 # Footer
   [[menu.footer]]
         name = "GitHub"
         url = "https://github.com/joshvera"
         weight = 1 
-
     [[menu.footer]]
         name = "Bluesky"
-        url = "https://bsky.app/profile/joshvera.bsky.social"
+        url = "https://bsky.app/profile/joshvera.com"
         weight = 2
     [[menu.footer]]
         name = "Instagram"

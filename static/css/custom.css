@@ -1,0 +1,42 @@
+/* Custom styles to override theme defaults */
+
+/* Set all link colors to #2980b9 */
+:root {
+  --linkcolor: #2980b9 !important;
+  --visitedcolor: #2980b9 !important;
+}
+
+/* Additional link styling to ensure consistency */
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Override heading links styling */
+h1 a, h2 a, h3 a {
+  color: #2980b9;
+}
+
+/* Override item links in lists */
+.post-item h2 a {
+  color: #2980b9;
+}
+
+/* Ensure Read more links are consistent */
+.read-more {
+  color: #2980b9;
+}
+
+/* Navigation links */
+nav a {
+  color: #2980b9;
+}
+
+/* Footer links */
+footer a {
+  color: #2980b9;
+} 

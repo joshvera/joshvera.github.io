@@ -1,0 +1,128 @@
+/* Link post styles */
+.link-post {
+  margin-bottom: 2em;
+}
+
+.link-post .link-title,
+.link-post-summary .link-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.link-post .link-title a,
+.link-post-summary .link-title a {
+  color: #2980b9;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+.link-post .link-title a:hover,
+.link-post-summary .link-title a:hover {
+  border-bottom: 1px solid;
+}
+
+.link-post .link-url {
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.link-post .link-url a {
+  color: #2980b9;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+.link-post .link-url a:hover {
+  border-bottom: 1px solid;
+}
+
+.link-post blockquote {
+  border-left: 3px solid #ccc;
+  margin-left: 0;
+  padding-left: 1em;
+  color: #555;
+}
+
+.link-post .via {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Link post list item styles */
+.link-post-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.link-post-item .link-url a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.link-post-item .post-date {
+  min-width: 6.5em;
+  color: #555;
+}
+
+/* Home page post styling */
+.post-item {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item h2 {
+  margin-bottom: 0.2em;
+}
+
+.post-item h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.post-type {
+  margin-left: 1em;
+  font-style: italic;
+}
+
+.external-link {
+  margin-left: 0.5em;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.post-summary {
+  margin-top: 1em;
+}
+
+.link-post-summary blockquote {
+  border-left: 3px solid #ccc;
+  margin-left: 0;
+  padding-left: 1em;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #2980b9;
+  text-decoration: none;
+}
